@@ -32,8 +32,8 @@
 // console.assert(letterCount("abcabcabcdefab c a oo ija ;a ;skmdals kn").b === 4)
 // console.assert(letterCount().z === undefined)
 
-// Sorting through Blacklisted Mackrel
-//
+// Sorting through Blacklisted Mackrel Assignement
+
 // var searchTerm = "mackerel";
 // var stations = [
 //  "Baker Street",
@@ -316,30 +316,42 @@
 //
 // stationfilter(searchTerm, stations);
 
-String Reversal
-
-// Write a function that takes a string as input,
-// and returns a copy of that string reversed.
+// String Reversal Assignment
+// function reverse(str) {
+//   var backword = '';
+//   for (var i = str.length - 1; i >= 0; i--)
+//     backword += str[i];
+//   return backword;
+// }
 //
-// remember that:
-// - you can get and set characters in a string at
-//   specific indices
-//
-//   i.e. 'abc'[2] // 'c'
-//   i.e. 'abc'[3] = 'd' // 'abcd'
-// - there is an Array.reverse() method (but not a
-//   String.reverse() method)
-// - use something other than
-//
-//      "abc".split('').reverse().join('') --> "cba"
+// console.assert(reverse('hello') === 'olleh')
+// console.assert(reverse('hello, world') === 'dlrow ,olleh')
 
-function reverse(s) {
-  var o = '';
-  for (var i = s.length - 1; i >= 0; i--)
-    o += s[i];
-  return o;
-}
-console.log(reverse());
-
-console.assert(reverse('hello') === 'olleh')
-console.assert(reverse('hello, world') === 'dlrow ,olleh')
+// //String, Array Object Assignement - this one needs more work
+// function names(str) {
+//   var allNames = {};
+//   var namesArray = str.split(', ');
+//
+//   for (var i=0; i < namesArray.length; i++) {
+//       var person = namesArray[i].split(' ')
+//
+//       console.log(person[0]);
+//       var firstName = (person[0]);
+//
+//       console.log(person[1]);
+//       var lastName=(person[1]);
+//       allNames.firstName = lastName;
+//
+//       var listedNames = {};
+//
+//       listedNames[firstName] = lastName;
+//
+//     }
+//       return listedNames
+//
+// }
+//
+//  var results = names("George Washington, John Adams, Kanye West")
+//  console.assert(results['George'] === "Washington")
+//  console.assert(results['John'] === "Adams")
+//  console.assert(results['Kanye'] === "West")
